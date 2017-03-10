@@ -13,9 +13,9 @@ export const receiveLogoutSuccess = () => dispatch => ({
   type: RECEIVE_LOGOUT_SUCCESS
 });
 
-export const receiveErrors = error => dispatch => ({
+export const receiveErrors = errors => dispatch => ({
   type: RECEIVE_ERRORS,
-  error
+  errors
 });
 
 export const requestLogin = currentUser => dispatch => {
