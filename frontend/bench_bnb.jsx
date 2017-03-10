@@ -12,6 +12,7 @@ window.logout = logout;
 
 document.addEventListener('DOMContentLoaded', () => {
   const store = configureStore();
+  window.store = store;
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={store}/>, root);
 });
