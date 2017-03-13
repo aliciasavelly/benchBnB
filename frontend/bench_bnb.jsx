@@ -4,10 +4,12 @@ import configureStore from './store/store';
 import Root from './components/root';
 
 //to delete
-import { requestSignup, requestLogin, requestLogout } from './actions/session_actions';
-window.signup = requestSignup;
-window.login = requestLogin;
-window.logout = requestLogout;
+// import { requestSignup, requestLogin, requestLogout } from './actions/session_actions';
+// window.signup = requestSignup;
+// window.login = requestLogin;
+// window.logout = requestLogout;
+import { fetchBenches } from './util/bench_api_util';
+window.fetchBenches = fetchBenches;
 //
 
 document.addEventListener('DOMContentLoaded', () => {
