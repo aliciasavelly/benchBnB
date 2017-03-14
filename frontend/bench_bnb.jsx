@@ -10,6 +10,8 @@ import Root from './components/root';
 // window.logout = requestLogout;
 import { fetchBenches } from './util/bench_api_util';
 window.fetchBenches = fetchBenches;
+import { requestBenches } from './actions/bench_actions';
+window.requestBenches = requestBenches;
 //
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -21,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     store = configureStore();
   }
   // window.store = configureStore();
-  // window.store = store;
+  window.store = store;
   const root = document.getElementById('root');
   ReactDOM.render(<Root store={store}/>, root);
 });
